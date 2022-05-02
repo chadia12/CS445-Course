@@ -51,6 +51,9 @@ class User{
 constructor(name){
     this.name =name;
 }
+ logger(){
+        console.log(`Decorated user ${this.name}, ${this.street}, ${this.city}`);
+    }
 }
 
 class DecoratedUser{
