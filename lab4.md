@@ -130,7 +130,7 @@ strategy.logging(['table', 'table']);
 ```
 ## QUESTION 4
 ```question4.js
- let fibonacci =(function(){
+let fibonacci =(function(){
      let memo ={};
      function fnc(number){
          let value;
@@ -151,5 +151,19 @@ strategy.logging(['table', 'table']);
 
  )();
 
- console.log(fibonacci(5));
+
+  console.time(fibonacci(5));
+  console.timeEnd(fibonacci(5));
+  //8: 0.104ms
+
+  function fibonacci1(n) {
+    if (n <= 1) {
+        return n;
+    }
+    return fibonacci(n - 1) + fibonacci(n - 2);
+}
+
+console.time(fibonacci1(5));
+  console.timeEnd(fibonacci1(5));
+  //8: 0.1ms
 ```
