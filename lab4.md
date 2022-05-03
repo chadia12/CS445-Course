@@ -78,29 +78,31 @@ decorated.logger();
 ```question2.js
 class Info{
     logging(message){
-console.log(message);
+console.info(message);
     }
 }
 
 class Warn{
     logging(message){
-        console.log(message);
+        console.warn(message);
             }
 
 }
 
 class Error{
     logging(message){
-        console.log(message);
+        console.error(message);
             }
 
 }
 class Table{
     logging(message){
-        console.log(message);
+        console.table(message);
             }
 
 }
+
+
 
 class Strategy{
 action =""
